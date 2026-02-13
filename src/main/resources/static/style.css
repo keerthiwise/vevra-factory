@@ -20,24 +20,28 @@ body {
 }
 
 /* =========================
-   WATERMARK
+   FIXED CENTER WATERMARK (ALL PAGES SAME)
    ========================= */
-.watermark-page {
-    position: relative;
-}
 
-.watermark-page::before {
+body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
 
     background: url("/vevra-logo.jpeg") no-repeat center;
     background-size: 520px;
 
-    opacity: 0.12;
+    opacity: 0.18;
     pointer-events: none;
     z-index: 0;
 }
+
+/* Bring all page content above watermark */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
 
 /* keep content above watermark */
 .watermark-page > * {
@@ -218,8 +222,8 @@ h1, h2, h3, h4, h5 {
 /* Cards become glass */
 .card {
     background: rgba(255, 255, 255, 0.10) !important;
-    backdrop-filter: blur(2px) saturate(100%) !important;
-    -webkit-backdrop-filter: blur(2px) saturate(200%) !important;
+    backdrop-filter: blur(2px) saturate(200%) !important;
+    -webkit-backdrop-filter: blur(3px) saturate(100%) !important;
 
     border: 1px solid rgba(255, 255, 255, 0.40) !important;
     box-shadow: 0 18px 60px rgba(0, 0, 0, 0.10) !important;
