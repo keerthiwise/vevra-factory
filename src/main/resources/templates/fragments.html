@@ -6,8 +6,30 @@
 <nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
-        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="/">
-            <span>VEVRA</span>
+<!--        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="/">-->
+<!--            <span>VEVRA</span>-->
+<!--        </a>-->
+<!--        <a class="navbar-brand fw-bold d-flex flex-column lh-1" href="/">-->
+<!--            <span style="font-size: 22px;">VEVRA</span>-->
+<!--            <small style="font-size: 12px; font-weight: 500; opacity: 0.75; pointer-events: none;">-->
+<!--                Vibrant Eco Vision for Responsible Alternatives-->
+<!--            </small>-->
+<!--        </a>-->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+
+            <!-- Logo -->
+            <img src="/vevra.png" alt="Vevra Logo"
+                 style="height:45px; width:auto; border-radius:10px;">
+
+            <!-- Text -->
+            <div class="d-flex flex-column lh-1">
+                <span class="fw-bold" style="font-size: 22px;">VEVRA</span>
+
+                <small style="font-size: 12px; font-weight: 500; opacity: 0.75; pointer-events: none;">
+                    Vibrant Eco Vision for Responsible Alternatives
+                </small>
+            </div>
+
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
