@@ -74,13 +74,20 @@ body > * {
     color: white;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
+.mail-btn {
+    background: #e6f6ff !important;
+    color: #0077cc  !important;
+    border: 1px solid rgba(0,0,0,0.15);
+}
 
 .whatsapp-btn {
     background: #25D366;
 }
 
 .call-btn {
-    background: #0d6efd;
+    background: #0e6f4ff;
+    color: #0077cc  !important;
+        border: 1px solid rgba(12,0,14,0.15);
 }
 
 /* =========================
