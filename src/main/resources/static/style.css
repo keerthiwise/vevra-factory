@@ -240,3 +240,16 @@ h1, h2, h3, h4, h5 {
 .watermark-page::before {
     opacity: 0.22 !important;
 }
+/* ===== iPhone safe area fix ===== */
+
+.floating-buttons {
+    right: 20px;
+    bottom: calc(28px + env(safe-area-inset-bottom));
+}
+
+/* fallback for older iOS */
+@supports not (bottom: env(safe-area-inset-bottom)) {
+    .floating-buttons {
+        bottom: 30px;
+    }
+}
